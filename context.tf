@@ -19,7 +19,7 @@
 #
 
 module "this" {
-  source = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
+  source = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.25.0"
 
   enabled             = var.enabled
   namespace           = var.namespace
@@ -38,7 +38,6 @@ module "this" {
 }
 
 # Copy contents of cloudposse/terraform-null-label/variables.tf here
-
 variable "context" {
   type = object({
     enabled             = bool
